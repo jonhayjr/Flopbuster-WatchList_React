@@ -37,8 +37,8 @@ const WatchListItem = ({item, index, watchList, moveItemDown, moveItemUp}) => {
           <div>{'$' + item.price.toFixed(2)} {getDateFormatLong(item.dateAdded)}</div>
         </div>
         <div className="arrow-buttons">
-          <i className="material-icons" hidden={firstIndex === index} onClick={handleUpArrowClick}>expand_less</i>
-          <i className="material-icons" hidden={lastIndex === index} onClick={handleDownArrowClick}>expand_more</i>
+          <i className="material-icons upArrow" hidden={firstIndex === index} onClick={handleUpArrowClick}>expand_less</i>
+          <i className="material-icons downArrow" hidden={lastIndex === index} onClick={handleDownArrowClick}>expand_more</i>
         </div>
       </div>
     )

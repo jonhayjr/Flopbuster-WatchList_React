@@ -12,8 +12,13 @@ code {
     monospace;
 }
 
-
 .item-details {
   width: 150px;
   text-align: left;
+}
+
+.upArrow:hover,
+.downArrow:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
